@@ -16,7 +16,7 @@ class_name N # short for NodeUtils
 ## var damage: float = 5
 ## 
 ## func _on_body_enter(body):
-## 		var player: Player = N.get_ancestor(body, Player)
+##    var player: Player = N.get_ancestor(body, Player)
 ##    if player:
 ##        player.take_damage(damage)
 static func get_ancestor(node: Node, type, name: String = ""):
@@ -45,7 +45,7 @@ static func get_ancestor(node: Node, type, name: String = ""):
 ## 
 ## func _physics_process(delta):
 ##    # looks for a player's health bar right under the player's root node.
-## 		var health_bar: HealthBar = N.get_child_immediate(player, HealthBar)
+##    var health_bar: HealthBar = N.get_child_immediate(player, HealthBar)
 ##    if health_bar:
 ##        health_bar.recover_health(regen_sec*delta)
 static func get_immediate_child(node: Node, type):
